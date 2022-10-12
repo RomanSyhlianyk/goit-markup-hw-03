@@ -68,8 +68,11 @@ body {
 
 /*Header*/
 
-header .container {
+.header {
   border-bottom: 1px solid #ececec;
+}
+
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -98,9 +101,10 @@ header .container {
   display: flex;
 }
 
-.nav-list .item {
+.nav-list .link {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: inline-block;
 }
 
 .nav-list .item:not(:last-child) {
@@ -140,6 +144,7 @@ header .container {
 .hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -193,8 +198,7 @@ header .container {
 
 .benefits-list {
   padding-left: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
   display: flex;
 }
 
@@ -264,16 +268,32 @@ header .container {
   justify-content: space-between;
 }
 
+.team-list .item{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list .desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+}
+
+.team-list .list {
+  line-height: 0;
+}
+
+.team-list img {
+  display: block;
+}
+
 .team-list .title {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-}
-
-.team-list .item {
-  display: block;
 }
 
 .team-list .text {
@@ -287,8 +307,6 @@ header .container {
 /* footer */
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--secondary-background-color);
 }
 
@@ -414,4 +432,8 @@ header .container {
   line-height: 1.88;
 
   color: var(--primary-text-color);
+}
+
+.images-list li {
+  line-height: 0;
 }
